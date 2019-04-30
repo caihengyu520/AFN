@@ -1,0 +1,6 @@
+Unsupervised Domain Adaptation: An Adaptive Feature Norm Approach
+
+该论文核心思想是将模型的所有参数即权重视为一种矩阵，然后对参数矩阵进行一种非参数化的自适应特征范数，并且提出了HAFN和IAFN两种方式
+论文模型架构是一个传统卷积神经网络层用G表示（通常选区resnet网络）+分类器网络用F表示（即几个全连接网络）
+HAFN即将分类损失加上HAFN损失函数
+IAFN即将分类损失加上IAFN损失，而IAFN损失函数与HAFN损失函数区别在于计算norm_loss函数时在r部分有所不同
